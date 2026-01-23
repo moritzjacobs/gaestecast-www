@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="icon"
+			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎤</text></svg>"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Gästecast — dein Event im Aufnahmezustand</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body class="bg-bgcolor overflow-x-hidden">
+		<div class="m-auto max-w-3xl">
+			<header>
+				<div class="flex">
+					{{> eyes }}
+					<h1
+						class="flex-1 p-[1em] text-right text-2xl font-thin tracking-widest uppercase sm:text-4xl md:text-5xl"
+					>
+						Dein Event im Aufnahmezustand
+					</h1>
+				</div>
+			</header>
+
+			<main
+				class="prose prose-p:text-white bg-cool prose-invert prose-2xl p-[2em]"
+			>
+				{{> content }} {{> mikro }}
+			</main>
+		</div>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
+</html>

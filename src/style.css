@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+	--color-fgcolor: #f7b801;
+	--color-bgcolor: #fcf4aa;
+	--color-accent: #c05746;
+	--color-cool: #819595;
+}
+
+body {
+	font-family: "Outfit", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+[data-eyes] {
+	transition: transform 300ms;
+}
