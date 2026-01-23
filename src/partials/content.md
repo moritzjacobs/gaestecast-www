@@ -1,0 +1,3 @@
+> Mit Gästecast interviewe ich eure Gäste direkt auf dem Event. Persönlich, unterhaltsam und professionell produziert – perfekt für Hochzeiten, Feiern und besondere Anlässe.
+
+Ich mache Erinnerungen hörbar. Mit Gästecast bin ich auf eurem Event vor Ort und spreche mit euren Gästen – locker, persönlich und mit einem guten Gespür für die richtigen Fragen. Dabei entstehen kurze Audio-Interviews voller Glückwünsche, Anekdoten und ehrlicher Momente, die man so in keinem Gästebuch findet. Aus den Aufnahmen mache ich ein unterhaltsames Audioformat, das ihr euch auch Jahre später noch gerne anhört. Besonders beliebt auf Hochzeiten, aber genauso passend für andere Feiern und Events, bei denen Menschen und ihre Stimmen im Mittelpunkt stehen sollen.
