@@ -2,10 +2,56 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-	--color-fgcolor: #f7b801;
-	--color-bgcolor: #fcf4aa;
-	--color-accent: #c05746;
-	--color-cool: #819595;
+	--color-pacific-cyan-50: rgb(236 246 249);
+	--color-pacific-cyan-100: rgb(217 238 242);
+	--color-pacific-cyan-200: rgb(179 220 230);
+	--color-pacific-cyan-300: rgb(140 203 217);
+	--color-pacific-cyan-400: rgb(102 185 204);
+	--color-pacific-cyan-500: rgb(64 168 191);
+	--color-pacific-cyan-600: rgb(51 134 153);
+	--color-pacific-cyan-700: rgb(38 101 115);
+	--color-pacific-cyan-800: rgb(25 67 77);
+	--color-pacific-cyan-900: rgb(13 34 38);
+	--color-pacific-cyan-950: rgb(9 24 27);
+
+	--color-granite-50: rgb(241 243 244);
+	--color-granite-100: rgb(227 232 232);
+	--color-granite-200: rgb(199 208 209);
+	--color-granite-300: rgb(171 185 186);
+	--color-granite-400: rgb(143 162 163);
+	--color-granite-500: rgb(115 139 140);
+	--color-granite-600: rgb(92 111 112);
+	--color-granite-700: rgb(69 83 84);
+	--color-granite-800: rgb(46 55 56);
+	--color-granite-900: rgb(23 28 28);
+	--color-granite-950: rgb(16 19 20);
+
+	--color-banana-cream-50: rgb(255 252 230);
+	--color-banana-cream-100: rgb(254 249 205);
+	--color-banana-cream-200: rgb(254 242 154);
+	--color-banana-cream-300: rgb(253 236 104);
+	--color-banana-cream-400: rgb(253 230 53);
+	--color-banana-cream-500: rgb(252 223 3);
+	--color-banana-cream-600: rgb(202 179 2);
+	--color-banana-cream-700: rgb(151 134 2);
+	--color-banana-cream-800: rgb(101 89 1);
+	--color-banana-cream-900: rgb(50 45 1);
+	--color-banana-cream-950: rgb(35 31 0);
+
+	--color-lobster-pink-50: rgb(251 234 236);
+	--color-lobster-pink-100: rgb(246 213 216);
+	--color-lobster-pink-200: rgb(237 171 177);
+	--color-lobster-pink-300: rgb(228 129 139);
+	--color-lobster-pink-400: rgb(219 87 100);
+	--color-lobster-pink-500: rgb(210 45 61);
+	--color-lobster-pink-600: rgb(168 36 49);
+	--color-lobster-pink-700: rgb(126 27 37);
+	--color-lobster-pink-800: rgb(84 18 24);
+	--color-lobster-pink-900: rgb(42 9 12);
+	--color-lobster-pink-950: rgb(29 6 9);
+
+	--color-fgcolor: var(--color-lobster-pink-950);
+	--color-bgcolor: var(--color-lobster-pink-500);
 }
 
 body {
@@ -15,6 +61,65 @@ body {
 	font-style: normal;
 }
 
-[data-eyes] {
+.font-special {
+	font-family: "Savate", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+}
+
+[data-follow-mouse] {
 	transition: transform 300ms;
+}
+
+.paper {
+	position: relative;
+	padding: 3rem;
+	transition: rotate 400ms;
+
+	&:before {
+		content: "";
+		z-index: -1;
+		border-radius: 3rem;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url(/paper.jpg);
+		background-color: inherit;
+		background-blend-mode: screen;
+		background-size: cover;
+		transition: clip-path 400ms;
+		clip-path: polygon(
+			calc(100% - var(--a)) var(--b),
+			calc(100% - var(--d)) calc(100% - var(--c)),
+			var(--d) calc(100% - var(--b)),
+			var(--a) var(--c)
+		);
+	}
+
+	&.paper-1 {
+		rotate: -2deg;
+		--a: 1rem;
+		--b: 0.33rem;
+		--c: 0.5rem;
+		--d: 0.66rem;
+	}
+
+	&.paper-2 {
+		rotate: 2deg;
+		--d: 1rem;
+		--b: 0.33rem;
+		--a: 0.5rem;
+		--c: 0.66rem;
+	}
+
+	&.paper-3 {
+		rotate: -1deg;
+		--c: 1rem;
+		--a: 0.33rem;
+		--b: 0.5rem;
+		--d: 0.66rem;
+	}
 }

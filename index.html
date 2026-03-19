@@ -14,24 +14,65 @@
 			href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Savate:wght@700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body class="bg-bgcolor overflow-x-hidden">
 		<div class="m-auto max-w-3xl">
 			<header>
 				<div class="flex">
-					{{> eyes }}
+					{{> head }}
 					<h1
-						class="flex-1 p-[1em] text-right text-2xl font-thin tracking-widest uppercase sm:text-4xl md:text-5xl"
+						class="font-special flex-1 p-[1em] text-2xl font-thin text-white uppercase sm:text-4xl md:text-5xl"
 					>
 						Dein Event im Aufnahmezustand
 					</h1>
 				</div>
 			</header>
 
-			<main
-				class="prose prose-p:text-white bg-cool prose-invert prose-2xl p-[2em]"
-			>
-				{{> content }} {{> mikro }}
+			<main>
+				<div class="paper paper-1 prose">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Curabitur commodo, quam id efficitur tempus, lacus velit
+					aliquam dui, nec scelerisque arcu tellus sed odio. Donec
+					accumsan dignissim metus vitae porttitor. Aliquam volutpat
+					ut enim eu ultricies. Phasellus massa magna, vehicula sed
+					nisi in, scelerisque elementum mi. Orci varius natoque
+					penatibus et magnis dis parturient montes, nascetur
+					ridiculus mus. Pellentesque lobortis varius dolor, eget
+					maximus ante fermentum non. Nunc euismod purus aliquam velit
+					aliquam pulvinar. Pellentesque habitant morbi tristique
+					senectus et netus et malesuada fames ac turpis egestas.
+				</div>
+				<div class="paper paper-2 prose">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Curabitur commodo, quam id efficitur tempus, lacus velit
+					aliquam dui, nec scelerisque arcu tellus sed odio. Donec
+					accumsan dignissim metus vitae porttitor. Aliquam volutpat
+					ut enim eu ultricies. Phasellus massa magna, vehicula sed
+					nisi in, scelerisque elementum mi. Orci varius natoque
+					penatibus et magnis dis parturient montes, nascetur
+					ridiculus mus. Pellentesque lobortis varius dolor, eget
+					maximus ante fermentum non. Nunc euismod purus aliquam velit
+					aliquam pulvinar. Pellentesque habitant morbi tristique
+					senectus et netus et malesuada fames ac turpis egestas.
+				</div>
+				<div class="paper paper-1 prose">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Curabitur commodo, quam id efficitur tempus, lacus velit
+					aliquam dui, nec scelerisque arcu tellus sed odio. Donec
+					accumsan dignissim metus vitae porttitor. Aliquam volutpat
+					ut enim eu ultricies. Phasellus massa magna, vehicula sed
+					nisi in, scelerisque elementum mi. Orci varius natoque
+					penatibus et magnis dis parturient montes, nascetur
+					ridiculus mus. Pellentesque lobortis varius dolor, eget
+					maximus ante fermentum non. Nunc euismod purus aliquam velit
+					aliquam pulvinar. Pellentesque habitant morbi tristique
+					senectus et netus et malesuada fames ac turpis egestas.
+				</div>
+				{{> mikro }}
 			</main>
 		</div>
 		<script type="module" src="/src/main.ts"></script>
