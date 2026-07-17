@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #fcf4aa;
+  --color-cream-soft: #fffbe3;
+  --color-gold: #f7b801;
+  --color-terracotta: #c05746;
+  --color-sage: #819595;
+  --color-ink: #2b2016;
+
+  --font-display: var(--font-caveat), cursive;
+  --font-sans: var(--font-outfit), sans-serif;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+}
+
+/* Hand-drawn underline doodle used behind headline accents */
+.doodle-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.doodle-underline svg {
+  position: absolute;
+  left: 0;
+  bottom: -0.15em;
+  width: 100%;
+  height: 0.3em;
+  overflow: visible;
+}
